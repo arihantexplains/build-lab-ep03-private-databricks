@@ -1,0 +1,34 @@
+# Build output
+bin/
+obj/
+*.user
+.vs/
+.vscode/
+TestResults/
+
+# Your real values. Only config.sample.ps1 belongs in the repo.
+scripts/config.ps1
+config/environment-variable.json
+
+# Signing keys and credentials: never commit these
+*.snk
+*.pfx
+*.pem
+*.key
+*.cer
+*.fic
+*.sub
+
+# Real settings
+appsettings.json
+appsettings.*.json
+deploymentsettings*.json
+*.env
+.env*
+
+# Solution exports can carry environment variable values
+*.zip
+
+# Logs and recordings
+*.log
+*.mp4

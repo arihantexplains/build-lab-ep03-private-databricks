@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Generic Dataverse plug-in that calls a PRIVATE Azure Databricks workspace.
+    .NET Framework 4.6.2 (the Dataverse sandbox runtime). Built with the .NET SDK;
+    the reference assemblies come from the Microsoft.NETFramework.ReferenceAssemblies package.
+    Dataverse needs a strong-named assembly: create your own key once with  sn -k key.snk  (never commit it).
+  -->
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>ArchitectBuilds.DatabricksPrivate</AssemblyName>
+    <RootNamespace>ArchitectBuilds.DatabricksPrivate</RootNamespace>
+    <LangVersion>7.3</LangVersion>
+    <SignAssembly Condition="Exists('key.snk')">true</SignAssembly>
+    <AssemblyOriginatorKeyFile Condition="Exists('key.snk')">key.snk</AssemblyOriginatorKeyFile>
+    <Version>1.0.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Deterministic>true</Deterministic>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.56" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+
+</Project>

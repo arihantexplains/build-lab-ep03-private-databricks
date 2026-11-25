@@ -1,0 +1,5 @@
+{
+  "workspaceUrl": "https://adb-<workspace-id>.<n>.azuredatabricks.net",
+  "clusterId": "<cluster-id>",
+  "notebookPath": "/Shared/ab-demo/summary"
+}

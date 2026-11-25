@@ -1,0 +1,534 @@
+- lblBg:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =0
+      Y: =0
+      Width: =1366
+      Height: =768
+      Fill: =RGBA(243, 245, 249, 1)
+- lblHeader:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Architect Builds   |   Databricks Private Console"
+      X: =0
+      Y: =0
+      Width: =1366
+      Height: =72
+      Fill: =RGBA(11, 31, 58, 1)
+      Color: =RGBA(255, 255, 255, 1)
+      Size: =20
+      FontWeight: =FontWeight.Bold
+      PaddingLeft: =32
+- lblLock:
+    Control: Label@2.5.1
+    Properties:
+      Text: |-
+        ="Public network access: OFF"
+      X: =1084
+      Y: =18
+      Width: =250
+      Height: =36
+      Fill: =RGBA(198, 40, 40, 1)
+      Color: =RGBA(255, 255, 255, 1)
+      Size: =12
+      FontWeight: =FontWeight.Bold
+      Align: =Align.Center
+- lblStep1:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="1  Power Apps"
+      X: =32
+      Y: =88
+      Width: =236
+      Height: =44
+      Fill: =If(varBusy, RGBA(222, 235, 255, 1), RGBA(255, 255, 255, 1))
+      Color: =RGBA(11, 31, 58, 1)
+      Size: =12
+      FontWeight: =FontWeight.Semibold
+      Align: =Align.Center
+      BorderColor: =RGBA(201, 211, 227, 1)
+      BorderThickness: =1
+- lblArrow1:
+    Control: Label@2.5.1
+    Properties:
+      Text: =">"
+      X: =268
+      Y: =88
+      Width: =26
+      Height: =44
+      Color: =RGBA(0, 95, 184, 1)
+      Size: =16
+      FontWeight: =FontWeight.Bold
+      Align: =Align.Center
+- lblStep2:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="2  Custom API (Dataverse)"
+      X: =294
+      Y: =88
+      Width: =236
+      Height: =44
+      Fill: =If(varBusy, RGBA(222, 235, 255, 1), RGBA(255, 255, 255, 1))
+      Color: =RGBA(11, 31, 58, 1)
+      Size: =12
+      FontWeight: =FontWeight.Semibold
+      Align: =Align.Center
+      BorderColor: =RGBA(201, 211, 227, 1)
+      BorderThickness: =1
+- lblArrow2:
+    Control: Label@2.5.1
+    Properties:
+      Text: =">"
+      X: =530
+      Y: =88
+      Width: =26
+      Height: =44
+      Color: =RGBA(0, 95, 184, 1)
+      Size: =16
+      FontWeight: =FontWeight.Bold
+      Align: =Align.Center
+- lblStep3:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="3  Plug-in, delegated subnet"
+      X: =556
+      Y: =88
+      Width: =236
+      Height: =44
+      Fill: =If(varBusy, RGBA(222, 235, 255, 1), RGBA(255, 255, 255, 1))
+      Color: =RGBA(11, 31, 58, 1)
+      Size: =12
+      FontWeight: =FontWeight.Semibold
+      Align: =Align.Center
+      BorderColor: =RGBA(201, 211, 227, 1)
+      BorderThickness: =1
+- lblArrow3:
+    Control: Label@2.5.1
+    Properties:
+      Text: =">"
+      X: =792
+      Y: =88
+      Width: =26
+      Height: =44
+      Color: =RGBA(0, 95, 184, 1)
+      Size: =16
+      FontWeight: =FontWeight.Bold
+      Align: =Align.Center
+- lblStep4:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="4  Private endpoint"
+      X: =818
+      Y: =88
+      Width: =236
+      Height: =44
+      Fill: =If(varBusy, RGBA(222, 235, 255, 1), RGBA(255, 255, 255, 1))
+      Color: =RGBA(11, 31, 58, 1)
+      Size: =12
+      FontWeight: =FontWeight.Semibold
+      Align: =Align.Center
+      BorderColor: =RGBA(201, 211, 227, 1)
+      BorderThickness: =1
+- lblArrow4:
+    Control: Label@2.5.1
+    Properties:
+      Text: =">"
+      X: =1054
+      Y: =88
+      Width: =26
+      Height: =44
+      Color: =RGBA(0, 95, 184, 1)
+      Size: =16
+      FontWeight: =FontWeight.Bold
+      Align: =Align.Center
+- lblStep5:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="5  Azure Databricks"
+      X: =1080
+      Y: =88
+      Width: =236
+      Height: =44
+      Fill: =If(varBusy, RGBA(222, 235, 255, 1), RGBA(255, 255, 255, 1))
+      Color: =RGBA(11, 31, 58, 1)
+      Size: =12
+      FontWeight: =FontWeight.Semibold
+      Align: =Align.Center
+      BorderColor: =RGBA(201, 211, 227, 1)
+      BorderThickness: =1
+- lblCardL:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =32
+      Y: =152
+      Width: =520
+      Height: =584
+      Fill: =RGBA(255, 255, 255, 1)
+      BorderColor: =RGBA(201, 211, 227, 1)
+      BorderThickness: =1
+- lblActions:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Choose an operation"
+      X: =52
+      Y: =166
+      Width: =480
+      Height: =36
+      Color: =RGBA(11, 31, 58, 1)
+      Size: =15
+      FontWeight: =FontWeight.Bold
+- btnWhoAmI:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="Who am I?"
+      X: =52
+      Y: =210
+      Width: =230
+      Height: =60
+      Size: =15
+      FontWeight: =FontWeight.Semibold
+      Fill: =If(varOp = "whoAmI", RGBA(0, 95, 184, 1), RGBA(255, 255, 255, 1))
+      Color: =If(varOp = "whoAmI", RGBA(255, 255, 255, 1), RGBA(11, 31, 58, 1))
+      HoverFill: =If(varOp = "whoAmI", RGBA(0, 95, 184, 1), RGBA(222, 235, 255, 1))
+      HoverColor: =If(varOp = "whoAmI", RGBA(255, 255, 255, 1), RGBA(11, 31, 58, 1))
+      PressedFill: =RGBA(0, 95, 184, 1)
+      BorderColor: =RGBA(0, 95, 184, 1)
+      BorderThickness: =2
+      RadiusTopLeft: =10
+      RadiusTopRight: =10
+      RadiusBottomLeft: =10
+      RadiusBottomRight: =10
+      DisplayMode: =If(varBusy, DisplayMode.Disabled, DisplayMode.Edit)
+      OnSelect: |-
+        =Set(varBusy, true);
+        Set(varOp, "whoAmI");
+        Set(varT0, Now());
+        Set(
+            varResp,
+            IfError(
+                Environment.ab_DatabricksRequest({Operation: "whoAmI", Payload: ""}),
+                {Status: "Error", Result: FirstError.Message}
+            )
+        );
+        Set(varMs, DateDiff(varT0, Now(), TimeUnit.Milliseconds));
+        Set(varAt, Now());
+        Set(varBusy, false)
+- btnDns:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="DNS check"
+      X: =302
+      Y: =210
+      Width: =230
+      Height: =60
+      Size: =15
+      FontWeight: =FontWeight.Semibold
+      Fill: =If(varOp = "dnsCheck", RGBA(0, 95, 184, 1), RGBA(255, 255, 255, 1))
+      Color: =If(varOp = "dnsCheck", RGBA(255, 255, 255, 1), RGBA(11, 31, 58, 1))
+      HoverFill: =If(varOp = "dnsCheck", RGBA(0, 95, 184, 1), RGBA(222, 235, 255, 1))
+      HoverColor: =If(varOp = "dnsCheck", RGBA(255, 255, 255, 1), RGBA(11, 31, 58, 1))
+      PressedFill: =RGBA(0, 95, 184, 1)
+      BorderColor: =RGBA(0, 95, 184, 1)
+      BorderThickness: =2
+      RadiusTopLeft: =10
+      RadiusTopRight: =10
+      RadiusBottomLeft: =10
+      RadiusBottomRight: =10
+      DisplayMode: =If(varBusy, DisplayMode.Disabled, DisplayMode.Edit)
+      OnSelect: |-
+        =Set(varBusy, true);
+        Set(varOp, "dnsCheck");
+        Set(varT0, Now());
+        Set(
+            varResp,
+            IfError(
+                Environment.ab_DatabricksRequest({Operation: "dnsCheck", Payload: ""}),
+                {Status: "Error", Result: FirstError.Message}
+            )
+        );
+        Set(varMs, DateDiff(varT0, Now(), TimeUnit.Milliseconds));
+        Set(varAt, Now());
+        Set(varBusy, false)
+- btnList:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="List clusters"
+      X: =52
+      Y: =286
+      Width: =230
+      Height: =60
+      Size: =15
+      FontWeight: =FontWeight.Semibold
+      Fill: =If(varOp = "listClusters", RGBA(0, 95, 184, 1), RGBA(255, 255, 255, 1))
+      Color: =If(varOp = "listClusters", RGBA(255, 255, 255, 1), RGBA(11, 31, 58, 1))
+      HoverFill: =If(varOp = "listClusters", RGBA(0, 95, 184, 1), RGBA(222, 235, 255, 1))
+      HoverColor: =If(varOp = "listClusters", RGBA(255, 255, 255, 1), RGBA(11, 31, 58, 1))
+      PressedFill: =RGBA(0, 95, 184, 1)
+      BorderColor: =RGBA(0, 95, 184, 1)
+      BorderThickness: =2
+      RadiusTopLeft: =10
+      RadiusTopRight: =10
+      RadiusBottomLeft: =10
+      RadiusBottomRight: =10
+      DisplayMode: =If(varBusy, DisplayMode.Disabled, DisplayMode.Edit)
+      OnSelect: |-
+        =Set(varBusy, true);
+        Set(varOp, "listClusters");
+        Set(varT0, Now());
+        Set(
+            varResp,
+            IfError(
+                Environment.ab_DatabricksRequest({Operation: "listClusters", Payload: ""}),
+                {Status: "Error", Result: FirstError.Message}
+            )
+        );
+        Set(varMs, DateDiff(varT0, Now(), TimeUnit.Milliseconds));
+        Set(varAt, Now());
+        Set(varBusy, false)
+- btnStart:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="Start cluster"
+      X: =302
+      Y: =286
+      Width: =230
+      Height: =60
+      Size: =15
+      FontWeight: =FontWeight.Semibold
+      Fill: =If(varOp = "startCluster", RGBA(0, 95, 184, 1), RGBA(255, 255, 255, 1))
+      Color: =If(varOp = "startCluster", RGBA(255, 255, 255, 1), RGBA(11, 31, 58, 1))
+      HoverFill: =If(varOp = "startCluster", RGBA(0, 95, 184, 1), RGBA(222, 235, 255, 1))
+      HoverColor: =If(varOp = "startCluster", RGBA(255, 255, 255, 1), RGBA(11, 31, 58, 1))
+      PressedFill: =RGBA(0, 95, 184, 1)
+      BorderColor: =RGBA(0, 95, 184, 1)
+      BorderThickness: =2
+      RadiusTopLeft: =10
+      RadiusTopRight: =10
+      RadiusBottomLeft: =10
+      RadiusBottomRight: =10
+      DisplayMode: =If(varBusy, DisplayMode.Disabled, DisplayMode.Edit)
+      OnSelect: |-
+        =Set(varBusy, true);
+        Set(varOp, "startCluster");
+        Set(varT0, Now());
+        Set(
+            varResp,
+            IfError(
+                Environment.ab_DatabricksRequest({Operation: "startCluster", Payload: ""}),
+                {Status: "Error", Result: FirstError.Message}
+            )
+        );
+        Set(varMs, DateDiff(varT0, Now(), TimeUnit.Milliseconds));
+        Set(varAt, Now());
+        Set(varBusy, false)
+- btnSubmit:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="Submit job"
+      X: =52
+      Y: =362
+      Width: =230
+      Height: =60
+      Size: =15
+      FontWeight: =FontWeight.Semibold
+      Fill: =If(varOp = "submitJob", RGBA(0, 95, 184, 1), RGBA(255, 255, 255, 1))
+      Color: =If(varOp = "submitJob", RGBA(255, 255, 255, 1), RGBA(11, 31, 58, 1))
+      HoverFill: =If(varOp = "submitJob", RGBA(0, 95, 184, 1), RGBA(222, 235, 255, 1))
+      HoverColor: =If(varOp = "submitJob", RGBA(255, 255, 255, 1), RGBA(11, 31, 58, 1))
+      PressedFill: =RGBA(0, 95, 184, 1)
+      BorderColor: =RGBA(0, 95, 184, 1)
+      BorderThickness: =2
+      RadiusTopLeft: =10
+      RadiusTopRight: =10
+      RadiusBottomLeft: =10
+      RadiusBottomRight: =10
+      DisplayMode: =If(varBusy, DisplayMode.Disabled, DisplayMode.Edit)
+      OnSelect: |-
+        =Set(varBusy, true);
+        Set(varOp, "submitJob");
+        Set(varT0, Now());
+        Set(
+            varResp,
+            IfError(
+                Environment.ab_DatabricksRequest({Operation: "submitJob", Payload: txtRows.Text}),
+                {Status: "Error", Result: FirstError.Message}
+            )
+        );
+        Set(varMs, DateDiff(varT0, Now(), TimeUnit.Milliseconds));
+        Set(varAt, Now());
+        If(varResp.Status = "OK", Set(varRunId, Match(varResp.Result, "\d+").FullMatch));
+        Set(varBusy, false)
+- btnStatus:
+    Control: Classic/Button@2.2.0
+    Properties:
+      Text: ="Run status"
+      X: =302
+      Y: =362
+      Width: =230
+      Height: =60
+      Size: =15
+      FontWeight: =FontWeight.Semibold
+      Fill: =If(varOp = "runStatus", RGBA(0, 95, 184, 1), RGBA(255, 255, 255, 1))
+      Color: =If(varOp = "runStatus", RGBA(255, 255, 255, 1), RGBA(11, 31, 58, 1))
+      HoverFill: =If(varOp = "runStatus", RGBA(0, 95, 184, 1), RGBA(222, 235, 255, 1))
+      HoverColor: =If(varOp = "runStatus", RGBA(255, 255, 255, 1), RGBA(11, 31, 58, 1))
+      PressedFill: =RGBA(0, 95, 184, 1)
+      BorderColor: =RGBA(0, 95, 184, 1)
+      BorderThickness: =2
+      RadiusTopLeft: =10
+      RadiusTopRight: =10
+      RadiusBottomLeft: =10
+      RadiusBottomRight: =10
+      DisplayMode: =If(varBusy, DisplayMode.Disabled, DisplayMode.Edit)
+      OnSelect: |-
+        =Set(varBusy, true);
+        Set(varOp, "runStatus");
+        Set(varT0, Now());
+        Set(
+            varResp,
+            IfError(
+                Environment.ab_DatabricksRequest({Operation: "runStatus", Payload: varRunId}),
+                {Status: "Error", Result: FirstError.Message}
+            )
+        );
+        Set(varMs, DateDiff(varT0, Now(), TimeUnit.Milliseconds));
+        Set(varAt, Now());
+        Set(varBusy, false)
+- lblRows:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Rows for Submit job"
+      X: =52
+      Y: =440
+      Width: =230
+      Height: =30
+      Color: =RGBA(11, 31, 58, 1)
+      Size: =12
+      FontWeight: =FontWeight.Semibold
+- txtRows:
+    Control: Classic/TextInput@2.3.2
+    Properties:
+      Default: ="100000"
+      X: =52
+      Y: =472
+      Width: =230
+      Height: =42
+      Size: =14
+      BorderColor: =RGBA(201, 211, 227, 1)
+- lblRunIdHead:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Last run id (Run status uses it)"
+      X: =302
+      Y: =440
+      Width: =236
+      Height: =30
+      Color: =RGBA(11, 31, 58, 1)
+      Size: =12
+      FontWeight: =FontWeight.Semibold
+- lblRunId:
+    Control: Label@2.5.1
+    Properties:
+      Text: =If(IsBlank(varRunId), "none yet", varRunId)
+      X: =302
+      Y: =472
+      Width: =230
+      Height: =42
+      Font: =Font.'Courier New'
+      Size: =13
+      BorderColor: =RGBA(201, 211, 227, 1)
+      BorderThickness: =1
+      PaddingLeft: =10
+- lblHelp:
+    Control: Label@2.5.1
+    Properties:
+      Text: |-
+        =Switch(
+            varOp,
+            "whoAmI", "Asks Databricks who is calling. The answer is our managed identity: no password or secret anywhere.",
+            "dnsCheck", "Looks up the workspace name from inside the delegated subnet. A 10.x address means the private endpoint answers, not the internet.",
+            "listClusters", "Lists the compute clusters in the workspace, over the private path.",
+            "startCluster", "Starts the demo cluster. It stops by itself after 10 idle minutes to save cost.",
+            "submitJob", "Sends a notebook job to Databricks and returns at once with a run id. We never wait inside the plug-in.",
+            "runStatus", "Asks for the job state using the run id. When it is done we get the result back.",
+            "Every button calls one Dataverse Custom API. The plug-in runs inside our private network and reaches Databricks only through the private endpoint."
+        )
+      X: =52
+      Y: =532
+      Width: =480
+      Height: =190
+      Color: =RGBA(60, 72, 92, 1)
+      Size: =13
+      VerticalAlign: =VerticalAlign.Top
+      Fill: =RGBA(247, 249, 252, 1)
+      PaddingLeft: =14
+      PaddingTop: =12
+      PaddingRight: =14
+- lblCardR:
+    Control: Label@2.5.1
+    Properties:
+      Text: =""
+      X: =576
+      Y: =152
+      Width: =758
+      Height: =584
+      Fill: =RGBA(255, 255, 255, 1)
+      BorderColor: =RGBA(201, 211, 227, 1)
+      BorderThickness: =1
+- lblResHead:
+    Control: Label@2.5.1
+    Properties:
+      Text: ="Response from Databricks"
+      X: =596
+      Y: =166
+      Width: =500
+      Height: =36
+      Color: =RGBA(11, 31, 58, 1)
+      Size: =15
+      FontWeight: =FontWeight.Bold
+- lblStatus:
+    Control: Label@2.5.1
+    Properties:
+      Text: =If(varBusy, "Calling...", If(IsBlank(varResp.Status), "Ready", varResp.Status))
+      X: =596
+      Y: =210
+      Width: =220
+      Height: =40
+      Fill: =If(varBusy, RGBA(237, 161, 0, 1), If(IsBlank(varResp.Status), RGBA(120, 132, 150, 1), If(varResp.Status = "Error", RGBA(198, 40, 40, 1), RGBA(16, 124, 65, 1))))
+      Color: =RGBA(255, 255, 255, 1)
+      Size: =15
+      FontWeight: =FontWeight.Bold
+      Align: =Align.Center
+- lblMeta:
+    Control: Label@2.5.1
+    Properties:
+      Text: =If(IsBlank(varOp) || varBusy, "", varOp & "   |   " & Text(varMs) & " ms   |   " & Text(varAt, "hh:mm:ss"))
+      X: =836
+      Y: =210
+      Width: =478
+      Height: =40
+      Color: =RGBA(60, 72, 92, 1)
+      Size: =13
+- lblResult:
+    Control: Label@2.5.1
+    Properties:
+      Text: |-
+        =If(
+            IsBlank(varResp.Result),
+            "Pick an operation on the left." & Char(10) & Char(10) & "Path: Power Apps > Custom API > plug-in in our delegated subnet > private endpoint 10.10.0.132 > Databricks.",
+            Substitute(Substitute(varResp.Result, ",""", "," & Char(10) & """"), "[{", "[" & Char(10) & "{")
+        )
+      X: =596
+      Y: =266
+      Width: =718
+      Height: =454
+      Fill: =RGBA(15, 27, 45, 1)
+      Color: =RGBA(214, 228, 255, 1)
+      Font: =Font.'Courier New'
+      Size: =13
+      VerticalAlign: =VerticalAlign.Top
+      PaddingLeft: =16
+      PaddingTop: =14
+      PaddingRight: =16
